@@ -1,6 +1,7 @@
 import requests
 import json
 import csv
+#Query para obtener todas las batallas de la primera guerra mundial en Serbia, Austria, Francia y Alemania.
 query='''select distinct str(?label) AS ?name ?lat ?lon str(?desc) AS ?description ?date str(?casualties) AS ?causalties  where {
 ?s rdf:type <http://schema.org/Event> .
 {
